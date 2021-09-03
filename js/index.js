@@ -786,3 +786,57 @@
 // const mango = makeShef("mango");
 
 // mango("milk");
+
+// function pigIt(str) {
+//   //Code here
+//   const newStr = str.split(" ").map((el) => {
+//     const arrWords = el.split("");
+//     const firstEl = arrWords.splice(0, 1);
+//     const valid = /[^A-Z a-z0-9]/;
+
+//     arrWords.push(firstEl + "ay");
+
+//     if (valid.test(arrWords[0])) {
+//       arrWords[0] = leaveSymbol(arrWords[0]);
+//     }
+
+//     return arrWords.join("");
+//   });
+
+//   function leaveSymbol(arr) {
+//     let oneSymbol = "";
+
+//     if (arr) {
+//       oneSymbol = arr.slice(0, 1);
+//     }
+
+//     return oneSymbol;
+//   }
+
+//   return newStr.join(" ");
+// }
+// console.log(pigIt("This is my string , * ! ."));
+// pigIt("Hello , world !"); // elloHay orldway !
+// pigIt("Pig latin , is cool"), "igPay atinlay siay oolcay";
+// pigIt("This is my string"), "hisTay siay ymay tringsay";
+
+// console.log(pigIt("Hello d hi 0 9 777 77 sss ! worl * ! $ $ *")); // elloHay orldway !
+
+function pyramid(n) {
+  // your code here
+  const arr = [];
+  let num = "1";
+
+  for (let i = 1; i <= n; i++) {
+    const piramidArr = num.split("").map((el) => +el);
+
+    console.log(piramidArr);
+
+    arr.push(piramidArr);
+
+    num += 1;
+  }
+  console.table(arr);
+}
+
+pyramid(5);
