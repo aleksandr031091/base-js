@@ -866,7 +866,7 @@ function solution(str, ending) {
 
   console.log(str.substr(-ending.length));
 
-  return str.substr(-ending.length) !== ending ? false : true;
+  return str.substr(-ending.length) === ending;
 }
 
 console.log(solution("abcde", "de"));
