@@ -838,11 +838,35 @@
 //   }
 //   console.table(arr);
 // }
+// // pyramid(5);
 
-// pyramid(5);
-function cockroachSpeed(s) {
-  //Good Luck!
-  return Math.floor(s / 0.036);
+// function cockroachSpeed(s) {
+//   //Good Luck!
+//   return Math.floor(s / 0.036);
+// }
+
+// console.log(cockroachSpeed(3.4523999259949294));
+
+// function highAndLow(numbers) {
+//   // ...
+
+//   // const arrNum = numbers.split(" ").filter((element) => {
+//   //   return element < num;
+//   // });
+
+//   return `${Math.max(...numbers.split(" "))} ${Math.min(
+//     ...numbers.split(" ")
+//   )}`;
+// }
+
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+function solution(str, ending) {
+  // TODO: complete
+
+  console.log(str.substr(-ending.length));
+
+  return str.substr(-ending.length) !== ending ? false : true;
 }
 
-console.log(cockroachSpeed(3.4523999259949294));
+console.log(solution("abcde", "de"));
