@@ -822,21 +822,27 @@
 
 // console.log(pigIt("Hello d hi 0 9 777 77 sss ! worl * ! $ $ *")); // elloHay orldway !
 
-function pyramid(n) {
-  // your code here
-  const arr = [];
-  let num = "1";
+// function pyramid(n) {
+//   // your code here
+//   const arr = [];
+//   let num = "1";
 
-  for (let i = 1; i <= n; i++) {
-    const piramidArr = num.split("").map((el) => +el);
+//   for (let i = 1; i <= n; i++) {
+//     const piramidArr = num.split("").map((el) => +el);
 
-    console.log(piramidArr);
+//     console.log(piramidArr);
 
-    arr.push(piramidArr);
+//     arr.push(piramidArr);
 
-    num += 1;
-  }
-  console.table(arr);
+//     num += 1;
+//   }
+//   console.table(arr);
+// }
+
+// pyramid(5);
+function cockroachSpeed(s) {
+  //Good Luck!
+  return Math.floor(s / 0.036);
 }
 
-pyramid(5);
+console.log(cockroachSpeed(3.4523999259949294));
