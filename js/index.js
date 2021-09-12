@@ -858,15 +858,50 @@
 //     ...numbers.split(" ")
 //   )}`;
 // }
-
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
 
-function solution(str, ending) {
-  // TODO: complete
+// function solution(str, ending) {
+//   // TODO: complete
 
-  console.log(str.substr(-ending.length));
+//   console.log(str.substr(-ending.length));
 
-  return str.substr(-ending.length) === ending;
-}
+//   return str.substr(-ending.length) === ending;
+// }
 
-console.log(solution("abcde", "de"));
+// console.log(solution("abcde", "de"));
+// function lovefunc(flower1, flower2) {
+//   // moment of truth
+//   return flower1 % 2 !== flower2 % 2;
+// }
+// console.log(lovefunc(33, 675));
+// console.log(lovefunc(2, 2));
+// console.log(lovefunc(0, 1));
+// console.log(lovefunc(0, 0));
+
+// function solution(nums) {
+//   return nums === null ? [] : nums.sort((a, b) => a - b);
+// }
+// console.log(solution(null));
+
+// function likes(names) {
+//   // TODO
+//   switch (names.length) {
+//     case 0:
+//       return `no one likes this`;
+
+//     case 1:
+//       return `${names[0]} likes this`;
+
+//     case 2:
+//       return `${names[0]} and ${names[1]} like this`;
+
+//     case 3:
+//       return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+
+//     default:
+//       return `${names[0]}, ${names[1]} and ${
+//         names.length - 2
+//       } others like this`;
+//   }
+// }
+// console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
