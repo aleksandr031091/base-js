@@ -905,3 +905,10 @@
 //   }
 // }
 // console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
+
+function bump(x) {
+  const n = x.split("").filter((el) => el === "n");
+  //   console.log(n.length);
+  return n.length <= 15 ? "Woohoo!" : "Car Dead";
+}
+console.log(bump("_nnnnnnn_n__n______nn__nn_nnn"));
