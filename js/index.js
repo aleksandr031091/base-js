@@ -906,9 +906,76 @@
 // }
 // console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
-function bump(x) {
-  const n = x.split("").filter((el) => el === "n");
-  //   console.log(n.length);
-  return n.length <= 15 ? "Woohoo!" : "Car Dead";
-}
-console.log(bump("_nnnnnnn_n__n______nn__nn_nnn"));
+// function bump(x) {
+//   const n = x.split("").filter((el) => el === "n");
+//   //   console.log(n.length);
+//   return n.length <= 15 ? "Woohoo!" : "Car Dead";
+// }
+// console.log(bump("_nnnnnnn_n__n______nn__nn_nnn"));
+
+// function makeValley(arr) {
+//   // Your code
+//   const newArr = [...new Set(arr)];
+
+//   console.log(newArr);
+//   console.log(...newArr, ...newArr.reverse());
+// }
+
+// console.log(makeValley([20, 18, 16, 15, 14, 14, 13, 13, 10, 9, 4, 4, 4, 1]));
+// (function (x) {
+//   return x * x;
+// })(2);
+// console.log(
+//   (function (x) {
+//     return x * x;
+//   })(2)
+// );
+
+// console.log(((x) => x * x)(2));
+
+// const arr1 = [1, 2, 3];
+// const arr2 = ["a", "b", "c"];
+
+// // ваш код тут
+// arr1.mySuperFunc = function () {
+//   return arr1;
+// };
+
+// arr2.mySuperFunc = function () {
+//   return arr2;
+// };
+
+// const arr3 = ["x", "y", "z"];
+
+// arr3.mySuperFunc = function () {
+//   return arr3;
+// };
+
+// console.log(arr1.mySuperFunc()); // 1-2-3
+// console.log(arr2.mySuperFunc()); // a-b-c
+// console.log(arr3.mySuperFunc()); // x-y-z
+
+// for (var n = 0; n < 10; n++) {
+//   setTimeout(() => console.log(n), 0);
+//   console.log(n);
+// }
+
+// let qwert;
+// console.log(`"some" + ${qwert}` ? "string" : "int" + "here");
+
+// const data = [1, 2, 3, null, undefined, ""];
+
+// // clear(data); // [1,2,3]
+
+// console.log(data.includes(null || undefined));
+
+// const str = "asdbsa.txt";
+
+// const fn = (str) => {
+//   const newArr = str.split("");
+//   const indx = newArr.indexOf(".");
+
+//   return newArr.slice(indx + 1).join("");
+// };
+
+// console.log(fn("asdbsdfsa.txt"));
