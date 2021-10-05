@@ -979,3 +979,9 @@
 // };
 
 // console.log(fn("asdbsdfsa.txt"));
+
+function digital_root(n) {
+  // ...
+}
+
+digital_root(12345);
