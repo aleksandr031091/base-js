@@ -981,7 +981,16 @@
 // console.log(fn("asdbsdfsa.txt"));
 
 function digital_root(n) {
-  // ...
+  let arrNums = String(n)
+    .split("")
+    .reduce((acc, item) => {
+      return +item + acc;
+    }, 0);
+
+  if (String(arrNums).length > 1) {
+    return digital_root(arrNums);
+  }
+  return arrNums;
 }
 
-digital_root(12345);
+console.log(digital_root(55));
