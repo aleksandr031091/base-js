@@ -980,17 +980,33 @@
 
 // console.log(fn("asdbsdfsa.txt"));
 
-function digital_root(n) {
-  let arrNums = String(n)
-    .split("")
-    .reduce((acc, item) => {
-      return +item + acc;
-    }, 0);
+// function digital_root(n) {
+//   // ========== top in cw
+//   // return ((n - 1) % 9) + 1;
+//   // ===========
+//   let arrNums = String(n)
+//     .split("")
+//     .reduce((acc, item) => {
+//       return +item + acc;
+//     }, 0);
 
-  if (String(arrNums).length > 1) {
-    return digital_root(arrNums);
-  }
-  return arrNums;
+//   if (String(arrNums).length > 1) {
+//     return digital_root(arrNums);
+//   }
+//   return arrNums;
+// }
+// console.log(digital_root(5522));
+
+function rowWeights(array) {
+  return array.reduce(
+    (acc, item, idx) => {
+      const num = item;
+      idx % 2 === 0 ? (acc[0] += num) : (acc[1] += num);
+
+      return acc;
+    },
+    [0, 0]
+  );
 }
 
-console.log(digital_root(55));
+console.log(rowWeights([100, 51, 50, 100]));
