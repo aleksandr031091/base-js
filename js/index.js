@@ -997,16 +997,45 @@
 // }
 // console.log(digital_root(5522));
 
-function rowWeights(array) {
-  return array.reduce(
-    (acc, item, idx) => {
-      const num = item;
-      idx % 2 === 0 ? (acc[0] += num) : (acc[1] += num);
+// function rowWeights(array) {
+//   return array.reduce(
+//     (acc, item, idx) => {
+//       const num = item;
+//       idx % 2 === 0 ? (acc[0] += num) : (acc[1] += num);
 
-      return acc;
-    },
-    [0, 0]
+//       return acc;
+//     },
+//     [0, 0]
+//   );
+// }
+// console.log(rowWeights([100, 51, 50, 100]));
+
+// const number = function (busStops) {
+//   return busStops.reduce((acc, [sit, ext]) => {
+//     // acc += arr[0];
+//     // let exit = arr[1];
+//     return acc + sit - ext;
+//   }, 0);
+// };
+// console.log(
+//   number([
+//     [3, 0],
+//     [9, 1],
+//     [4, 8],
+//     [12, 2],
+//     [6, 1],
+//     [7, 8],
+//   ])
+// );
+
+const arrLetter = ["a", "e", "i", "o", "u"];
+function disemvowel(str) {
+  console.log(
+    str
+      .split("")
+      .filter((l) => !arrLetter.includes(l.toLowerCase()))
+      .join("")
   );
+  return str;
 }
-
-console.log(rowWeights([100, 51, 50, 100]));
+disemvowel("This website is for losers LOL!");
